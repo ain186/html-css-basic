@@ -1,2 +1,1 @@
-# html-css-basic
-One page using html and css
+https://ain186.github.io/html-css-basic
