@@ -1,0 +1,78 @@
+footer {
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.copyright {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    padding: 15px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: red;
+}
+
+.form-cta .form-cta__title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+#email,
+#msg {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    width: 400px;
+    border: 2px solid red;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#submit {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #ca1e1e;
+    float: right;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #fff;
+    border-color: #ca1e1e;
+}
+
+@media screen and (max-width: 1200px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-cta,
+    footer ul {
+        margin-top: 40px;
+    }
+}

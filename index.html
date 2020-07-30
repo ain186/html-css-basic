@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Vuong Tran">
+    <meta name="description" content="The Demo Web using HTML, CSS. Learning Area aims to provide complete beginners to the Web with all they need to know to get started with developing web sites and applications.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>HTML + CSS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -> navbar -->
+    <header>
+        <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a>
+        <ul class="nav-links">
+            <li><a href="#about">Giới thiệu</a></li>
+            <li><a href="#skills">Kỹ năng</a></li>
+            <li><a href="#projects">Dự án</a></li>
+        </ul>
+        <a class="cta" href="#cta">Liên hệ</a>
+        <p class="menu cta">Menu</p>
+    </header>
+    <div class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <a class="close__link" href="#about">Giới thiệu</a>
+            <a class="close__link2" href="#skills">Kỹ năng</a>
+            <a class="close__link3" href="#projects">Dự án</a>
+        </div>
+    </div>
+    <!-- banner -> i am fe dev -->
+    <div class="banner">
+        <div class="content">
+            <img src="images/react.png" class="logo" alt="logo reactjs">
+            <div class="content__title">
+                Trần Thế Vượng
+            </div>
+            <div class="content__text line-1 anim-typewriter">Tôi là Frontend Developer.</div>
+        </div>
+        <i class="fa fa-angle-double-down fa-lg glowing"></i>
+    </div>
+    <!-- About -->
+    <section class="about bg-light" id="about">
+        <div class="container">
+            <div class="grid-2">
+                <div class="center">
+                    <img src="images/avatar.jpg" height="200px" alt="pic 1">
+                </div>
+                <div class="desciption">
+                    <h3>Giới thiệu</h3>
+                    <p>Chào mừng bạn đến với Trang cá nhân của tôi. Trang cá nhân giới thiệu thông tin cơ bản, bao gồm cả cách thức liên hệ, các kỹ năng và dự án từng tham gia.</p>
+                </div>
+            </div>
+        </div>
+        <p class="title">Thông tin</p>
+        <div class="info">
+            <div class="info__school">
+                <img src="images/uet.jpg" alt="uet logo" />
+                <div>
+                    <p class="info__name">
+                        Đại học Công Nghệ - ĐHQGHN
+                    </p>
+                    <p class="info__year">
+                        Niên khóa 2017-2021
+                    </p>
+                    <p class="info__faculty">
+                        Khoa Công nghệ thông tin
+                    </p>
+                    <p class="info_gpa">GPA hiện tại: 2.9</p>
+                </div>
+            </div>
+            <div class="info__profile">
+                <table>
+                    <tr>
+                        <th>Ngày sinh</th>
+                        <td>19/01/1999</td>
+                    </tr>
+                    <tr>
+                        <th>Địa chỉ</th>
+                        <td>Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>zeroain186@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>Số điện thoại</th>
+                        <td>+84392595122</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- Skills -->
+    <section class="skills  bg-dark" id="skills">
+        <p class="title">Kỹ năng</p>
+        <div class="container grid-3 center">
+            <div>
+                <i class="fab fa-html5 fa-3x"></i>
+                <h3>HTML 5</h3>
+                <p>Là Ngôn Ngữ Đánh Dấu Siêu Văn Bản, tạo ra các trang web trên nền World Wide Web.</p>
+            </div>
+            <div>
+                <i class="fab fa-css3 fa-3x"></i>
+                <h3>CSS 3</h3>
+                <p>Được dùng để miêu tả cách trình bày các tài liệu viết bằng ngôn ngữ HTML và XHTML.</p>
+            </div>
+            <div>
+                <i class="fas fa-code fa-3x"></i>
+                <h3>JAVASCRIPT</h3>
+                <p>Là một ngôn ngữ lập trình thông dịch được phát triển từ các ý niệm nguyên mẫu.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <p class="title">Dự án</p>
+        <div class="feed">
+            <div class="card">
+                <p class="card__category">Frontend Developer</p>
+                <p class="card__title">Website Thương mại Điện tử</p>
+            </div>
+            <div class="card">
+                <p class="card__category">Frontend Developer</p>
+                <p class="card__title">Website Xem Phim</p>
+            </div>
+            <div class="card">
+                <p class="card__category">Frontend Developer</p>
+                <p class="card__title">Website Đặt vé Xem phim</p>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-dark" id="cta">
+        <p class="copyright">Vuong Tran &copy; 2020</p>
+        <ul>
+            <li><a href="https://www.facebook.com/vuong.17021142.241199" target="_blank"><i class="fab fa-facebook fa-lg">       /vuong.17021142.241199</i></a></li>
+            <li><a href="https://www.linkedin.com/in/tran-the-vuong/" target="_blank"><i class="fab fa-linkedin fa-lg">       /tran-the-vuong</i></a></li>
+            <li><a href="https://github.com/ain186" target="_blank"><i class="fab fa-github fa-lg">     /ain186</i></a></li>
+        </ul>
+        <div class="form-cta">
+            <p class="form-cta__title">Liên hệ</p>
+            <form>
+                <input type="text" id="email" name="email" placeholder="Email liên hệ"><br>
+                <textarea name="msg" id="msg" rows="3" placeholder="Tin nhắn để lại"></textarea> <br>
+                <input type="submit" id="submit" value="Gửi" id="submit">
+            </form>
+        </div>
+    </footer>
+    <!-- script for menu -->
+    <script type="text/javascript">
+        const doc = document;
+        const menuOpen = doc.querySelector(".menu");
+        const menuClose = doc.querySelector(".close");
+
+        const overlay = doc.querySelector(".overlay");
+
+        menuOpen.addEventListener("click", () => {
+            overlay.classList.add("overlay--active");
+        });
+
+        menuClose.addEventListener("click", () => {
+            overlay.classList.remove("overlay--active");
+        });
+
+        const linkClose = doc.querySelector(".close__link");
+        linkClose.addEventListener("click", () => {
+            overlay.classList.remove("overlay--active");
+        });
+
+        const linkClose2 = doc.querySelector(".close__link2");
+        linkClose2.addEventListener("click", () => {
+            overlay.classList.remove("overlay--active");
+        });
+
+        const linkClose3 = doc.querySelector(".close__link3");
+        linkClose3.addEventListener("click", () => {
+            overlay.classList.remove("overlay--active");
+        });
+    </script>
+</body>
+
+</html>

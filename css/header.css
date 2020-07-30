@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* navbar */
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #24252A;
+    opacity: 0.95;
+    padding: 20px 10%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a,
+.cta {
+    font-size: 100%;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-links li {
+    padding: 0 20px;
+}
+
+.nav-links li a {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: steelblue;
+}
+
+.cta {
+    padding: 9px 25px;
+    background-color: steelblue;
+    border: 1px solid steelblue;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta:hover {
+    background-color: rgb(7, 54, 92);
+}
+
+.menu {
+    display: none;
+}
+
+
+/* mobile */
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+.overlay a {
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.overlay a:hover {
+    color: #0088a9;
+}
+
+.overlay--active {
+    width: 100%;
+}
+
+.overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+    cursor: pointer;
+}
+
+
+/* banner */
+
+.banner::after {
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/showcase.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(2px);
+    transition: all 1000ms;
+}
+
+.content {
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 350px;
+    top: 35%;
+    text-align: center;
+    transition: all 1000ms;
+}
+
+.content .logo {
+    height: 180px;
+    width: 180px;
+}
+
+.content .content__title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: 'Pacifico', cursive;
+    margin-top: 1rem;
+}
+
+.content .content__text {
+    font-size: 100%;
+    font-weight: 500;
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.7;
+    margin-top: 1rem;
+}
+
+.line-1 {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+.banner i {
+    color: rgb(40, 170, 221);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    bottom: 5%;
+    text-align: center;
+    transition: all 1000ms;
+}
+
+
+/* Animation */
+
+.anim-typewriter {
+    animation: typewriter 4s steps(26) 1s 1 normal both, blinkTextCursor 500ms steps(26) infinite normal;
+}
+
+.glowing {
+    animation: glowing 1500ms infinite;
+}
+
+@keyframes glowing {
+    0% {
+        color: #004A7F;
+    }
+    50% {
+        color: #0094FF;
+    }
+    100% {
+        color: #004A7F;
+    }
+}
+
+.blink {
+    animation: blink-animation 1s steps(2, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 26em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav-links,
+    .cta {
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+    .line-1 {
+        font-size: 1.6rem;
+    }
+    .content .logo {
+        height: 140px;
+        width: 140px;
+    }
+    .content .content__title {
+        font-size: 1.8rem;
+    }
+}

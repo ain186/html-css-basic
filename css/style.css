@@ -1,0 +1,109 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: #BBB;
+    font-family: Helvetica, sans-serif;
+    padding-bottom: 100px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 80px repeat(2, 1fr) 100px;
+    width: 750px;
+    height: 600px;
+    grid-gap: 1rem;
+}
+
+.item {
+    display: flex;
+    border: solid 4px black;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px grey, 0 6px 6px gray;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    background-color: aqua;
+}
+
+.slidebar {
+    grid-row: 2/4;
+    grid-column: 1/2;
+    background-color: blue;
+}
+
+.content-1 {
+    grid-row: 2/3;
+    grid-column: 2/4;
+    background-color: coral;
+}
+
+.content-2 {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    background-color: crimson;
+}
+
+.content-3 {
+    grid-row: 3/4;
+    grid-column: 3/4;
+    background-color: darkgoldenrod;
+}
+
+.footer {
+    grid-row: 4/5;
+    grid-column: 1/4;
+    background-color: darkgray;
+}
+
+.form {
+    width: 750px;
+    margin: 20px auto;
+    background-color: rgb(228, 192, 192);
+    padding: 20px;
+}
+
+.form-row {
+    padding: 10px 0;
+    display: flex;
+}
+
+.form-row label {
+    padding-right: 10px;
+}
+
+.form-row input {
+    flex: 1;
+}
+
+.column-layout {
+    display: flex;
+}
+
+.main-column {
+    flex: 3;
+    order: 2;
+}
+
+.slidebar-one {
+    flex: 1;
+    order: 1;
+}
+
+.slidebar-two {
+    flex: 1;
+    order: 3;
+}
